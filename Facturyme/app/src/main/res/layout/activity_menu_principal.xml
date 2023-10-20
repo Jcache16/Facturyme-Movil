@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".menu_principal"
+    android:background="@drawable/menu_principal">
+
+    <Button
+        android:id="@+id/btnOpciones"
+        android:backgroundTint="@color/moradoC"
+        android:layout_width="195dp"
+        android:layout_height="153dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="5dp"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:gravity="bottom|center_horizontal"
+        android:text="Opciones"
+        android:textColor="#FF000000"
+        app:cornerRadius="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnPerfil"
+        app:layout_constraintTop_toBottomOf="@+id/btnArchivar" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="225dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="88dp"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:text="¡Bienvenido! ¿Qué vamos a hacer hoy?"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="64dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.448"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_redondo" />
+
+    <Button
+        android:id="@+id/btnCerrarSesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="@color/red"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Cerrar sesión"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnFacturas"
+        android:backgroundTint="@color/moradoC"
+        android:layout_width="195dp"
+        android:layout_height="153dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:gravity="bottom|center_horizontal"
+        android:text="Facturas"
+        android:textColor="#FF000000"
+        app:cornerRadius="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/btnArchivar"
+        android:backgroundTint="@color/moradoR"
+        android:layout_width="195dp"
+        android:layout_height="153dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="5dp"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:gravity="bottom|center_horizontal"
+        android:text="Archivar"
+        android:textColor="#FF000000"
+        app:cornerRadius="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnFacturas"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/btnPerfil"
+        android:backgroundTint="@color/moradoR"
+        android:layout_width="195dp"
+        android:layout_height="153dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:gravity="bottom|center_horizontal"
+        android:text="Perfil"
+        android:textColor="#FF000000"
+        app:cornerRadius="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnFacturas" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="105dp"
+        android:layout_height="135dp"
+        app:layout_constraintEnd_toEndOf="@+id/btnFacturas"
+        app:layout_constraintStart_toStartOf="@+id/btnFacturas"
+        app:layout_constraintTop_toTopOf="@+id/btnFacturas"
+        app:srcCompat="@drawable/facturas" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="118dp"
+        android:layout_height="102dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/btnPerfil"
+        app:layout_constraintStart_toStartOf="@+id/btnPerfil"
+        app:layout_constraintTop_toTopOf="@+id/btnPerfil"
+        app:srcCompat="@drawable/perfil" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="123dp"
+        android:layout_height="134dp"
+        app:layout_constraintEnd_toEndOf="@+id/btnArchivar"
+        app:layout_constraintStart_toStartOf="@+id/btnArchivar"
+        app:layout_constraintTop_toTopOf="@+id/btnArchivar"
+        app:srcCompat="@drawable/folder" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="104dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/btnOpciones"
+        app:layout_constraintStart_toStartOf="@+id/btnOpciones"
+        app:layout_constraintTop_toTopOf="@+id/btnOpciones"
+        app:srcCompat="@drawable/settings" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "312237221595",
+    "project_id": "facturyme-movil",
+    "storage_bucket": "facturyme-movil.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:312237221595:android:c2f679ed09f7bf66bb8efe",
+        "android_client_info": {
+          "package_name": "com.example.facturyme"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_JW7gtH_sYVqkGFiBqMAn397slmeWmgU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
