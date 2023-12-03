@@ -149,4 +149,28 @@
         app:layout_constraintTop_toTopOf="@+id/btnOpciones"
         app:srcCompat="@drawable/settings" />
 
+    <TextView
+        android:id="@+id/totalAmountTextView"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+        android:text="$0.0"
+        android:textColor="@color/moradoR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPerfil" />
+    <TextView
+        android:fontFamily="@font/montserrat_regular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:text="Total de tus facturas"
+        android:textColor="@color/moradoC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/totalAmountTextView" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

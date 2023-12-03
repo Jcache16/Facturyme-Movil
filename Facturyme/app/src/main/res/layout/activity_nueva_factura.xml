@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".nuevaFactura">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/menu_principal"
+            tools:context=".facturas">
+
+            <TextView
+                android:id="@+id/textViewVariable"
+                android:layout_width="221dp"
+                android:layout_height="52dp"
+                android:layout_marginTop="88dp"
+                android:fontFamily="@font/montserrat_extrabold"
+                android:text="Factura"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:backgroundTint="@color/blue"
+                android:text="Añadir"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editMonto" />
+
+            <EditText
+                android:id="@+id/editRFC"
+                android:layout_width="254dp"
+                android:layout_height="52dp"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:hint="RFC"
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewVariable" />
+
+            <EditText
+                android:id="@+id/editNombre"
+                android:layout_width="254dp"
+                android:layout_height="52dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:hint="Nombre"
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editRFC" />
+
+            <EditText
+                android:id="@+id/editRSocial"
+                android:layout_width="254dp"
+                android:layout_height="52dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:hint="Denominación o razón social"
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editNombre" />
+
+            <EditText
+                android:id="@+id/editRFiscal"
+                android:layout_width="254dp"
+                android:layout_height="52dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:hint="Régimen fiscal"
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editRSocial" />
+
+            <EditText
+                android:id="@+id/editZIP"
+                android:layout_width="254dp"
+                android:layout_height="52dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:hint="Código postal"
+                android:inputType="text"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editRFiscal" />
+
+            <EditText
+                android:id="@+id/editMonto"
+                android:layout_width="254dp"
+                android:layout_height="52dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:hint="Monto"
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editZIP" />
+
+        <Button
+            android:id="@+id/btnRegresarFacturasView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/blue"
+            android:text="Regresar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

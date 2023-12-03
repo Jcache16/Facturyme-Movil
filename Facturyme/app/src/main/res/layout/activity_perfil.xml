@@ -33,33 +33,62 @@
             android:layout_marginStart="24dp"
             android:layout_marginBottom="16dp"
             android:backgroundTint="@color/blue"
-            android:text="Regresar"
+            android:text="Regresar / Cancelar"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
         <EditText
-            android:id="@+id/editTextText2"
+            android:id="@+id/nameProfile"
             android:layout_width="248dp"
             android:layout_height="54dp"
             android:layout_marginTop="16dp"
             android:ems="10"
+            android:enabled="false"
+            android:hint="Nombre"
+            android:fontFamily="@font/montserrat_regular"
             android:inputType="text"
-            android:text="Name"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView9" />
 
-        <EditText
-            android:id="@+id/editTextTextPassword2"
-            android:layout_width="252dp"
-            android:layout_height="54dp"
+
+        <Switch
+            android:id="@+id/switchEditar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:ems="10"
-            android:hint="Password"
-            android:inputType="textPassword"
+            android:text="Editar información"
+            android:textSize="12dp"
+            android:fontFamily="@font/montserrat_regular"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/RFCProfile" />
+
+        <Button
+            android:id="@+id/btnGuardarCambios"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:backgroundTint="@color/moradoR"
+            android:onClick="guardarCambios"
+            android:text="Guardar Cambios"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+            app:layout_constraintTop_toBottomOf="@+id/RFCProfile" />
+
+        <EditText
+            android:id="@+id/RFCProfile"
+            android:layout_width="255dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="421dp"
+            android:ems="10"
+            android:enabled="false"
+            android:hint="RFC"
+            android:fontFamily="@font/montserrat_regular"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
 
         <ImageView
             android:id="@+id/imageView9"
